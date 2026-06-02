@@ -75,7 +75,7 @@ For questions, support, or collaboration, feel free to contact the developer:
 
 ### 🙌 Contributors
 
-Thanks to the following awesome contributors who help improve this project 💖
+The contributors who help improve this project 💖
 <table>
   <tr>
     <td align="center">
