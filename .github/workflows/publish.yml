@@ -1,36 +1,25 @@
-name: Publish to npm
+name: Publish to NPM
 
 on:
-  workflow_dispatch: {}
   push:
     branches:
       - main
-    tags:
-      - 'v*'
 
 jobs:
-  publish:
-    name: Publish package to npm
+  build-and-publish:
     runs-on: ubuntu-latest
-    environment: NPM_TOKEN
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Use Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          registry-url: 'https://registry.npmjs.org/'
-          always-auth: true
-          auth-token: ${{ secrets.NPM_TOKEN }}
+          node-version: 20
+          registry-url: https://registry.npmjs.org
 
-      - name: Install dependencies
-        run: npm install
+      - run: npm install --legacy-peer-deps
 
-      - name: Verify npm authentication
-        run: npm whoami
-
-      - name: Publish package
+      - name: Publish to NPM
         run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
