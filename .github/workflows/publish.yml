@@ -8,6 +8,7 @@ on:
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
+    environment: NPM_TOKEN
 
     steps:
       - uses: actions/checkout@v4
@@ -16,8 +17,13 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org
+          always-auth: true
+          auth-token: ${{ secrets.NPM_TOKEN }}
 
       - run: npm install --legacy-peer-deps
+
+      - name: Verify npm authentication
+        run: npm whoami
 
       - name: Publish to NPM
         run: npm publish --access public
