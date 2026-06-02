@@ -62,3 +62,39 @@ Licensed under the GPLv3: http://www.gnu.org/licenses/gpl-3.0.html
 
 * Copyright 2015-2016 Open Whisper Systems
 * Copyright 2017-2018 Forsta Inc
+
+--------
+
+
+### Contact Developer
+
+For questions, support, or collaboration, feel free to contact the developer:
+
+- **Telegram**: [Telegram Contact](https://t.me/kaitlynid)
+- **Channel WhatsApp**: [Channel WhatsApp](https://whatsapp.com/channel/0029VazMIDf5a24D7Tjiaw04) 
+
+### 🙌 Contributors
+
+Thanks to the following awesome contributors who help improve this project 💖
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Lynn091202">
+        <img src="https://github.com/Lynn091202.png" width="80px;" style="border-radius:50%;" alt="Lynn - Owner"/>
+        <br />
+        <sub><b>Lynn</b></sub>
+        <br />
+      </a>
+      <sub>👑 Owner</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/merlinusss">
+        <img src="https://github.com/merlinusss.png" width="80px;" style="border-radius:50%;" alt="Merl - Contributor"/>
+        <br />
+        <sub><b>Merl</b></sub>
+        <br />
+      </a>
+      <sub>💻 Contributor</sub>
+    </td>
+  </tr>
+</table>
